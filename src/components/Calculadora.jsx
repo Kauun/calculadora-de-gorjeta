@@ -1,5 +1,5 @@
 import cifrao from '../images/cifrao.png'
-import peoples from '../images/pessoa.png'
+import pessoa from '../images/pessoa.png'
 
 import './Calculadora.css'
 
@@ -16,7 +16,7 @@ export function Calculadora(){
                      </div>
                  </div>
 
-                 <div className="tip-porcentage">
+                 <div className="tip-percentage">
                      <label htmlFor="custom">Selecione a Porcentagem % </label>
                      <div>
                         <input type="button" value="5%" />
@@ -31,7 +31,7 @@ export function Calculadora(){
                      <div className="people">
                         <label htmlFor="people-number">Número De Pessoas</label>
                         <div className="input-box">
-                            <img src={peoples} alt="icon de pessoa" />
+                            <img src={pessoa} alt="icon de pessoa" />
                             <input type="number" id="people-number" placeholder="0" />
                         </div>
                      </div>
@@ -40,22 +40,24 @@ export function Calculadora(){
             </form>
 
             <section className="results">
-                <div className="tip-amount">
+                <div>
+                  <div className="tip-amount">
                     <p>
                        Gorjeta <br />
                        <span>/ pessoa</span>
                     </p>
 
                     <p>R$ 0.00</p>
-                </div>
+                  </div>
 
-                <div className="total">
+                  <div className="total">
                     <p>
                         Total <br />
                         <span>/ pessoa</span>
                     </p>
 
                     <p>R$ 0.00</p>
+                  </div>
                 </div>
 
                 <button>Limpar</button>
